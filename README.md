@@ -25,5 +25,5 @@ This is a work-in-progress research - Please feel free to make suggestions about
 
 ## Privacy
 
-This is a safe space where everyone is welcome to participate, learn and share. Participants are expected to respect each other's privacy, both online and in person. While joining this initiative Participants, instructors and guests agree to not record, capture, or take snapshots, unless previously agreed upon.
+This is a safe space where everyone is welcome to participate, learn and share. Participants are expected to respect each other's privacy, both online and in person. While joining this initiative participants, instructors and guests agree to not record, capture, or take snapshots, unless previously agreed upon.
 Recordings will be made for accommodation purposes only and will not be published online or shared otherwise.
