@@ -1,0 +1,44 @@
+body {
+	background-color: #CCC;
+	padding: 0;
+	margin: 0;
+	font-family: courier, "Courier New", monospace
+}
+
+button,
+strong {
+	font-family: courier, "Courier New", monospace
+}
+
+h3 {
+	text-align: center
+}
+
+table {
+	margin: 0 auto 50px;
+	text-align: center;
+}
+
+
+.sensorpad {
+	background-color: #f0f0f0;
+	border: solid 1px #999;
+	border-radius: 3px;
+	padding: 10px
+}
+
+.sensorpad td {
+	padding: 7px
+}
+
+.slider {
+  width: 100%;
+}
+
+.dot {
+  height: 50px;
+  width: 50px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  display: inline-block;
+}

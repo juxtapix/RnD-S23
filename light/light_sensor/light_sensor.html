@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="./css/main.css" rel="stylesheet" type="text/css">
+
+
+<body>
+
+<script src="./js/slider.js"></script>
+
+<br><br><br>
+
+<table class="sensorpad">
+	<tbody>
+
+    <tr>
+      <td>
+    		<p>Value: <span id="myValue" onload="start()">50</span></p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+      	<span class="dot" id="myCircle"></span>
+      </td>
+    </tr>
+
+    <tr>
+    <td>
+			<br>
+			<input type="range" min="0" max="100" value="50" oninput="updateSlider(this.value)" class="slider" id="myRange">
+		</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+</body>
