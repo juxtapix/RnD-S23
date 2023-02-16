@@ -1,6 +1,5 @@
-let str = 'Hello World!';
-let processedStr = processString(str);
-
+const str = 'Hello World!';
+let processedStr;
 let start = false;
 let letterIndex = 0;
 let bitIndex = 0;
@@ -9,6 +8,7 @@ function setup() {
   createCanvas(400, 400);
   background(255);
   frameRate(5);
+  processedStr = processString(str);
 }
 
 function draw() {
@@ -25,37 +25,27 @@ function mouseClicked() {
 }
 
 function writeData() {
-  if (processedStr[letterIndex][bitIndex] == 1) {
+  if (processedStr[letterIndex][bitIndex] === '1') {
     background(255);
   } else {
     background(0);
   }
   bitIndex++;
-  if (bitIndex == 8) {
+  if (bitIndex === 8) {
     bitIndex = 0;
     letterIndex++;
   }
-  if (letterIndex == processedStr.length) {
+  if (letterIndex === processedStr.length) {
     letterIndex = 0;
     start = false;
   }
 }
 
 function processString(str) {
-  let arr = [];
-  for (let i = 0; i < str.length; i++) {
-    arr.push(processChar(str[i]));
-  }
-  arr.push('00000000');
-  return arr;
+  return str.split('').map(processChar).concat(['00000000']);
 }
 
 function processChar(letter) {
-  let num = letter.charCodeAt(0);
-  let bin = num.toString(2);
-  let binLength = 8 - bin.length;
-  for (let i = 0; i < binLength; i++) {
-    bin = '0' + bin;
-  }
-  return bin;
+  let binary = letter.charCodeAt(0).toString(2);
+  return '0'.repeat(8 - binary.length) + binary;
 }
